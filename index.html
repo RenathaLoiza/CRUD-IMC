@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renatha Loiza">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>IMC</title>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>calcular IMC</h1>
+
+        <section>
+
+            <h2>Isnformações de registros</h2>
+
+            <form method="post" onsubmit="CalcularValores(event)">
+
+                <div class="fild-form">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+                </div>
+
+                <div class="fild-form">
+
+                    <label for="altura">altura:</label>
+                    <input type="number" name="altura" id="altura" step="0.01" min="0.10" max="400" placeholder="Digitar altura com o ponto">
+
+                </div>
+
+                <div class="fild-form">
+
+                    <label for="peso">peso:</label>
+                    <input type="number" name="peso" id="peso" step="0.1" placeholder="Digite peso">
+
+                </div>
+
+                <div class="fild-form">
+
+                    <label for="idade">idade:</label>
+                    <input type="number" name="idade" id="idade" placeholder="Digite a idade">
+
+                </div>
+
+                <div class="fild-buttons">
+
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Confirma</button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h2>Registered users</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nome:</th>
+                        <th>altura:</th>
+                        <th>peso:</th>
+                        <th>idade:</th>
+                        <th>IMC:</th>
+                        <th>Classificaçao :</th>
+                        <th>Data de registro:</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="table-body">
+
+
+
+                </tbody>
+
+            </table>
+
+            <button class="button-table" onclick="deleteRecord()">Delete Record</button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
